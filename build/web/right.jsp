@@ -6,6 +6,8 @@
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <link href="css/right.css" rel="stylesheet" type="text/css" />
+<script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+<script src="js/demo.js" ></script>
 
 <div class="right">
     <div class="newst">
@@ -18,11 +20,11 @@
     </div>
     <div class="newst">
         <div class="titleNews">
-            Search
+            <span>Search</span>
         </div>
         <form action="search" method="post">
-            <input class="searchBox" type="text" name="txtSearch" size="15"  required>
-            <input class="searchButton" type="submit" name="btnGo" value="Go">
+            <input class="searchBox" type="text" name="txtSearch" size="15" id="text">
+            <input class="searchButton" type="submit" name="btnGo" value="Go" id="search">
         </form>                        
     </div>
     <div class="newst">

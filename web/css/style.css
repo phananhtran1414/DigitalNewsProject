@@ -10,9 +10,9 @@ and open the template in the editor.
 body
 {
     font-family:sans-serif;
-    background-color: #E7E7E7;
+    background-color: #E7E7E7!important;
 }
-.container
+.container1
 {
     background-image: url(../images/bg.jpg) ;
     background-repeat: repeat-y;
@@ -20,7 +20,7 @@ body
     height: auto;
     margin: 0 auto;    
 }
-.content
+.content1
 {
     width: 760px;
     margin: 0 auto;

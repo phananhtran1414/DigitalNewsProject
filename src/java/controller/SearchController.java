@@ -73,6 +73,7 @@ public class SearchController extends HttpServlet {
 
             String pageIndex = request.getParameter("index"); 
             if(pageIndex==null){
+                request.setAttribute(("numberOfSearched"), digitalDAO.count(txt));
                 request.getSession().setAttribute("txtSearch", txt);
                 pageIndex = "1";
             }
@@ -115,6 +116,7 @@ public class SearchController extends HttpServlet {
             List<Digital> list = digitalDAO.getTop5();
             request.setAttribute("top5", list);
            
+            
             request.getRequestDispatcher("search-result.jsp").forward(request, response);
         } catch (Exception ex) {
             Logger.getLogger(SearchController.class.getName()).log(Level.SEVERE, null, ex);

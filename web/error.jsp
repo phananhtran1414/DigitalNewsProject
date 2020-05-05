@@ -14,9 +14,9 @@
         <link href="css/style.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
-        <div class="container">
+        <div class="container1">
             <jsp:include page="header.jsp"/>
-            <div class="content">
+            <div class="content1">
                 <div class="main">
                     <h1>Error</h1>
                 </div>
